@@ -6,7 +6,7 @@ from model import session, StockEODPrice
 
 if __name__ == '__main__':
     print("Started the Process")
-    tickers_list = ['AAPL', 'C', 'UAL', 'MMM']
+    tickers_list = ['AAPL', 'C', 'UAL', 'MMM', 'AMZN', 'DOCU', 'ZIM', 'VFS']
     data_List = []
     for ticker in tickers_list:
         eod_data = EndodDayAPI().get(ticker)
